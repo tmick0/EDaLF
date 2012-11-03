@@ -26,7 +26,7 @@ Version 0.01a - Prototype release
 4. Link the form to the database table  
     `$EForm1->link('example1');`
 
-5. Configure the field mappings, either manually or automagically
+5. Configure the field mappings, either manually or automagically  
     Manual  
     ```
     $EForm1->map(array(  
