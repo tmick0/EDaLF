@@ -28,6 +28,7 @@ Version 0.01a - Prototype release
 
 5. Configure the field mappings, either manually or automagically
     * Manual  
+    
     $EForm1->map(array(  
         'RowIndex'    => array('ID',            'Index',    '',                            ''      ) ,  
         'FirstName'   => array('First Name',    'Text',     'John',                        'r,l32' ) ,  
