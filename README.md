@@ -27,7 +27,7 @@ Version 0.01a - Prototype release
     `$EForm1->link('example1');`
 
 5. Configure the field mappings, either manually or automagically
-    * Manual  
+    Manual  
     ```$EForm1->map(array(  
         'RowIndex'    => array('ID',            'Index',    '',                            ''      ) ,  
         'FirstName'   => array('First Name',    'Text',     'John',                        'r,l32' ) ,  
@@ -36,9 +36,9 @@ Version 0.01a - Prototype release
         'Email'       => array('Email Address', 'Text',     'xyzzy@example.com',           'r,l128') ,    
         'Comments'    => array('Comments',      'TextArea', 'Please leave your feedback.', 'r,l300,w6,c45')  
     ));
-    ```  
-
-    * Automatic - attempts to autodetect these parameters from the database structure  
+    ```
+    
+    Automatic - attempts to autodetect these parameters from the database structure  
     `$EForm1->autoinit();`
 
 6. Finalize the field mappings, to generate a unique identifier for the form  
