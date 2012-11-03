@@ -27,9 +27,8 @@ Version 0.01a - Prototype release
     `$EForm1->link('example1');`
 
 5. Configure the field mappings, either manually or automagically  
-    * Manual
-    
     ```
+    // Manual config
     $EForm1->map(array(  
         'RowIndex'    => array('ID',            'Index',    '',                            ''      ) ,  
         'FirstName'   => array('First Name',    'Text',     'John',                        'r,l32' ) ,  
@@ -38,20 +37,24 @@ Version 0.01a - Prototype release
         'Email'       => array('Email Address', 'Text',     'xyzzy@example.com',           'r,l128') ,    
         'Comments'    => array('Comments',      'TextArea', 'Please leave your feedback.', 'r,l300,w6,c45')  
     ));
+
+    // Automatic config
+    $EForm1->autoinit();
     ```
-    
-    * Automatic - attempts to autodetect these parameters from the database structure  
-    `$EForm1->autoinit();`  
 
 6. Finalize the field mappings, to generate a unique identifier for the form  
     `$EForm1->finalize();`
 
-7. Do something with the form
-    * Make a form to input data  
-    `$EForm1->generateForm();`
-    * Handle submitted data  
-    `$EForm1->checkPost();`
-    * Display the content of the table  
-    `$EForm1->generateTable();`
+7. Do something with the form  
+    ```
+    // Make a form to input data  
+    $EForm1->generateForm();
+    
+    // Handle submitted data  
+    $EForm1->checkPost();
+    
+    // Display the content of the table  
+    $EForm1->generateTable();
+    ```
 
 See `edalf-example.php` for more details
